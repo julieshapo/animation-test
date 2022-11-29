@@ -1,0 +1,428 @@
+.section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  /* padding: 200px 100px; */
+}
+
+.icon {
+  position: absolute;
+  display: none;
+  width: 600px;
+  height: 600px;
+}
+
+.is-animated {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.park {
+  /* display: block;
+  fill: darkgreen; */
+}
+
+.sun {
+  top: 50px;
+  right: 700px;
+  display: block;
+  fill: rgb(247, 247, 126);
+  animation-name: animateSun;
+  animation-timing-function: linear;
+}
+
+@keyframes animateSun {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.cloud {
+  display: block;
+  top: -100px;
+  left: 0px;
+  fill: lightskyblue;
+  animation-name: animateCloudLeft;
+  animation-timing-function: linear;
+}
+
+@keyframes animateCloudLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(60vw);
+  }
+}
+
+.cloud-2 {
+  display: block;
+  top: 350px;
+  right: 0;
+  z-index: 1;
+
+  fill: lightskyblue;
+  animation-name: animateCloud;
+  animation-timing-function: linear;
+}
+
+@keyframes animateCloud {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-20vw);
+  }
+}
+
+.lighthouse {
+  top: 400px;
+  left: 600px;
+
+  display: block;
+  width: 1000px;
+  height: 1000px;
+  fill: tomato;
+
+  animation-name: animateLighthouse;
+  animation-timing-function: linear;
+}
+
+@keyframes animateLighthouse {
+  0% {
+    transform: perspective(700px) rotateY(0);
+  }
+
+  100% {
+    transform: rotateY(30deg);
+  }
+}
+
+.marine {
+  display: block;
+  bottom: 25%;
+  left: 0;
+  z-index: 1;
+  fill: cadetblue;
+
+  animation-name: animateMarine;
+  animation-timing-function: linear;
+}
+
+@keyframes animateMarine {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(20vw);
+  }
+}
+
+.anchor {
+  display: block;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  bottom: 20%;
+  left: 3%;
+  fill: rgb(38, 38, 82);
+
+  animation-name: animateAnchor;
+  animation-timing-function: linear;
+}
+
+@keyframes animateAnchor {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.penguin-1 {
+  top: 600px;
+  left: 0;
+  display: block;
+  width: 350px;
+  height: 350px;
+  fill: rgb(46, 44, 44);
+
+  animation-name: animatePenguin;
+  animation-duration: 500ms;
+}
+
+.penguin-2 {
+  top: 600px;
+  left: 300px;
+  display: block;
+  width: 350px;
+  height: 350px;
+  fill: rgb(46, 44, 44);
+
+  animation-name: animatePenguin;
+  animation-duration: 500ms;
+}
+
+.penguin-3 {
+  top: 950px;
+  left: 200px;
+  display: block;
+  width: 250px;
+  height: 250px;
+  fill: rgb(46, 44, 44);
+
+  animation-name: animatePenguin;
+  animation-duration: 500ms;
+}
+
+@keyframes animatePenguin {
+  0% {
+    transform: perspective(800px) rotateZ(0);
+  }
+
+  50% {
+    transform: perspective(800px) rotateZ(-5deg);
+  }
+
+  100% {
+    transform: perspective(800px) rotateZ(5deg);
+  }
+}
+
+/* .airplane {
+  display: block;
+  top: 0;
+  left: 0;
+  fill: violet;
+}
+
+.rocket {
+  display: none;
+  bottom: 0;
+  left: 0;
+  fill: cornflowerblue;
+} */
+
+.train {
+  display: block;
+  bottom: 50%;
+  right: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 150px;
+  height: 150px;
+  fill: aquamarine;
+
+  animation-name: animateTrain;
+  animation-timing-function: linear;
+}
+
+@keyframes animateTrain {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(7);
+  }
+}
+
+.bicycle {
+  display: block;
+  bottom: 50%;
+  right: 0;
+  fill: darkgreen;
+
+  animation-name: animateBicycle;
+  animation-duration: 8s;
+}
+
+@keyframes animateBicycle {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  50% {
+    transform: translateX(-28vw);
+  }
+
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.bus {
+  display: block;
+  bottom: 25%;
+  right: 5%;
+  fill: rgb(255, 146, 51);
+  color: tomato;
+  font-size: 20px;
+
+  animation-name: animateBus;
+  animation-duration: 2.5s;
+}
+
+@keyframes animateBus {
+  0% {
+    transform: scale(1) rotate(2deg);
+  }
+
+  50% {
+    transform: scale(1.1) rotate(0);
+  }
+
+  100% {
+    transform: scale(1) rotate(-2deg);
+  }
+}
+
+.car {
+  display: block;
+  bottom: 20%;
+  right: 20%;
+  fill: rgb(252, 225, 18);
+
+  animation-name: animateCar;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes animateCar {
+  0% {
+    transform: perspective(400px) rotateZ(3deg);
+  }
+
+  50% {
+    transform: perspective(400px) rotateZ(0);
+  }
+
+  100% {
+    transform: perspective(400px) rotatez(-3deg);
+  }
+}
+
+.truck {
+  display: block;
+  bottom: 0;
+  left: 0;
+  fill: rgb(86, 86, 251);
+
+  width: 400px;
+  height: 400px;
+
+  animation-name: animateTruck;
+  animation-duration: 5s;
+}
+
+@keyframes animateTruck {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+}
+
+.paw {
+  position: absolute;
+  display: block;
+
+  width: 150px;
+  height: 150px;
+}
+
+.paw-left {
+  bottom: 0;
+  right: 65vw;
+
+  animation-name: animatePawLeft;
+  animation-duration: 4s;
+}
+
+@keyframes animatePawLeft {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  20% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translateY(-300px);
+    opacity: 1;
+  }
+
+  60% {
+    transform: translateY(-400px);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateY(-500px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-600px);
+    opacity: 0;
+  }
+}
+
+.paw-right {
+  bottom: 150px;
+  right: 70vw;
+
+  animation-name: animatePawRight;
+  animation-duration: 4s;
+}
+
+@keyframes animatePawRight {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  20% {
+    transform: translateY(-200px);
+    opacity: 1;
+  }
+
+  40% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(-400px);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-600px);
+    opacity: 1;
+  }
+}
