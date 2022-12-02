@@ -86,8 +86,6 @@
   left: 600px;
 
   display: block;
-  width: 1000px;
-  height: 1000px;
   fill: tomato;
 
   animation-name: animateLighthouse;
@@ -127,8 +125,6 @@
 
 .anchor {
   display: block;
-  width: 200px;
-  height: 200px;
   z-index: 1;
   bottom: 20%;
   left: 3%;
@@ -152,8 +148,6 @@
   top: 600px;
   left: 0;
   display: block;
-  width: 350px;
-  height: 350px;
   fill: rgb(46, 44, 44);
 
   animation-name: animatePenguin;
@@ -164,8 +158,6 @@
   top: 600px;
   left: 300px;
   display: block;
-  width: 350px;
-  height: 350px;
   fill: rgb(46, 44, 44);
 
   animation-name: animatePenguin;
@@ -176,8 +168,6 @@
   top: 950px;
   left: 200px;
   display: block;
-  width: 250px;
-  height: 250px;
   fill: rgb(46, 44, 44);
 
   animation-name: animatePenguin;
@@ -212,8 +202,6 @@
 
   transform: translate(-50%, -50%);
 
-  width: 150px;
-  height: 150px;
   fill: aquamarine;
 
   animation-name: animateTrain;
@@ -311,9 +299,6 @@
   left: 0;
   fill: rgb(86, 86, 251);
 
-  width: 400px;
-  height: 400px;
-
   animation-name: animateTruck;
   animation-duration: 5s;
 }
@@ -333,9 +318,6 @@
 .paw {
   position: absolute;
   display: block;
-
-  width: 150px;
-  height: 150px;
 }
 
 .paw-left {
