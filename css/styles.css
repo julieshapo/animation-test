@@ -8,8 +8,6 @@
 .icon {
   position: absolute;
   display: none;
-  width: 600px;
-  height: 600px;
 }
 
 .is-animated {
