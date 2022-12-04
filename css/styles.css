@@ -4,7 +4,7 @@
   width: 1200px;
   height: 800px;
   
-  border: 1px solid #000000;
+  /* border: 1px solid #000000; */
 }
 
 .icon {
@@ -15,7 +15,6 @@
 .is-animated {
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
 
@@ -26,6 +25,7 @@
   fill: rgb(247, 247, 126);
   animation-name: animateSun;
   animation-timing-function: linear;
+  animation-direction: alternate;
 }
 
 @keyframes animateSun {
@@ -45,6 +45,7 @@
   fill: lightskyblue;
   animation-name: animateCloudLeft;
   animation-timing-function: linear;
+  animation-direction: alternate;
 }
 
 @keyframes animateCloudLeft {
@@ -66,6 +67,7 @@
   fill: lightskyblue;
   animation-name: animateCloud;
   animation-timing-function: linear;
+  animation-direction: alternate;
 }
 
 @keyframes animateCloud {
@@ -87,6 +89,7 @@
 
   animation-name: animateLighthouse;
   animation-timing-function: linear;
+  animation-direction: alternate;
 }
 
 @keyframes animateLighthouse {
@@ -108,6 +111,7 @@
 
   animation-name: animateMarine;
   animation-timing-function: linear;
+  animation-direction: alternate;
 }
 
 @keyframes animateMarine {
@@ -128,7 +132,8 @@
   fill: rgb(38, 38, 82);
 
   animation-name: animateAnchor;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
 }
 
 @keyframes animateAnchor {
@@ -149,6 +154,7 @@
 
   animation-name: animatePenguin;
   animation-duration: 500ms;
+  animation-direction: alternate;
 }
 
 .penguin-2 {
@@ -159,6 +165,7 @@
 
   animation-name: animatePenguin;
   animation-duration: 500ms;
+  animation-direction: alternate;
 }
 
 .penguin-3 {
@@ -169,19 +176,20 @@
 
   animation-name: animatePenguin;
   animation-duration: 500ms;
+  animation-direction: alternate;
 }
 
 @keyframes animatePenguin {
   0% {
-    transform: perspective(800px) rotateZ(0);
+    transform: perspective(400px) rotateZ(-4deg);
   }
 
   50% {
-    transform: perspective(800px) rotateZ(-5deg);
+    transform: perspective(0px) rotateZ(0);
   }
 
   100% {
-    transform: perspective(800px) rotateZ(5deg);
+    transform: perspective(400px) rotateZ(4deg);
   }
 }
 
@@ -196,6 +204,7 @@
 
   animation-name: animateTrain;
   animation-timing-function: linear;
+  animation-direction: alternate;
 }
 
 @keyframes animateTrain {
@@ -224,7 +233,7 @@
   }
 
   50% {
-    transform: translateX(-28vw);
+    transform: translateX(-20vw);
   }
 
   100% {
@@ -241,20 +250,21 @@
   font-size: 20px;
 
   animation-name: animateBus;
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
 }
 
 @keyframes animateBus {
   0% {
-    transform: scale(1) rotate(2deg);
+    transform: scale(1) translateY(2px) rotateX(2deg) ;
   }
 
   50% {
-    transform: scale(1.1) rotate(0);
+    transform: scale(0.9) translateY(0) rotateX(0deg);
   }
 
   100% {
-    transform: scale(1) rotate(-2deg);
+    transform: scale(1) translateY(-2px) rotateX(-2deg);
   }
 }
 
@@ -267,11 +277,12 @@
   animation-name: animateCar;
   animation-duration: 500ms;
   animation-timing-function: linear;
+  animation-direction: alternate;
 }
 
 @keyframes animateCar {
   0% {
-    transform: perspective(400px) translateY(2px);
+    transform: perspective(400px) translateY(3px);
   }
 
   50% {
@@ -279,7 +290,7 @@
   }
 
   100% {
-    transform: perspective(400px) translateY(-2px);
+    transform: perspective(400px) translateY(-3px);
   }
 }
 
@@ -395,5 +406,22 @@
   display: block;
   bottom: 0;
   left: 0;
-  fill: cornflowerblue;
+  fill: rgb(191, 64, 25);
+
+  animation-name: animateRocket;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 500ms;
+}
+
+@keyframes animateRocket {
+  0% {
+    transform: translate(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(100vw, -100vh);
+    opacity: 0;
+  }
 }
