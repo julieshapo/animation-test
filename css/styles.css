@@ -1,11 +1,33 @@
 .section {
   position: relative;
   margin: 0 auto;
-  width: 1200px;
-  height: 800px;
+
+  
+  /* width: 1200px;
+  height: 800px; */
   
   /* border: 1px solid #000000; */
 }
+
+@media screen and (max-width: 479px) {
+  .section {
+    max-width: 100%;
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .section {width: 480px;}
+}
+
+@media screen and (min-width: 768px){
+  .section {width: 768px;}
+}
+
+@media screen and (min-width: 1200px){
+  .section {width: 1200px;}
+}
+
 
 .icon {
   display: block;
