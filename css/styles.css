@@ -41,79 +41,6 @@
   animation-timing-function: ease-in-out;
 }
 
-.sun {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: block;
-    top: 5%;
-    right: 25%;
-    fill: rgb(247, 247, 126);
-    animation-name: animateSun;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-  }
-
-  @keyframes animateSun {
-    0% {
-      transform: rotateZ(0);
-    }
-
-    100% {
-      transform: rotateZ(360deg);
-    }
-  }
-}
-
-.cloud {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: block;
-    top: 0px;
-    left: 0px;
-    fill: lightskyblue;
-    animation-name: animateCloudLeft;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-  }
-
-  @keyframes animateCloudLeft {
-    0% {
-      transform: translateX(0);
-    }
-
-    100% {
-      transform: translateX(600px);
-    }
-  }
-}
-
-.cloud-2 {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: block;
-    top: 200px;
-    right: 0;
-    z-index: 1;
-
-    fill: lightskyblue;
-    animation-name: animateCloud;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-  }
-  @keyframes animateCloud {
-    0% {
-      transform: translateX(0);
-    }
-
-    100% {
-      transform: translateX(-20vw);
-    }
-  }
-}
-
 .lighthouse {
   top: 150px;
   left: 50px;
@@ -227,10 +154,97 @@
   }
 }
 
-.train {
-  display: none;
+@media screen and (max-width: 767px) {
+  .sun {
+    display: none;
+  }
+  .cloud {
+    display: none;
+  }
+  .cloud-2 {
+    display: none;
+  }
+  .train {
+    display: none;
+  }
+  .truck {
+    display: none;
+  }
+  .bicycle {
+    display: none;
+  }
+  .bus {
+    display: none;
+  }
+  .car {
+    display: none;
+  }
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .sun {
+    display: block;
+    top: 5%;
+    right: 25%;
+    fill: rgb(247, 247, 126);
+    animation-name: animateSun;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+
+  @keyframes animateSun {
+    0% {
+      transform: rotateZ(0);
+    }
+
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  .cloud {
+    display: block;
+    top: 0px;
+    left: 0px;
+    fill: lightskyblue;
+    animation-name: animateCloudLeft;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+
+  @keyframes animateCloudLeft {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(300px);
+    }
+  }
+
+  .cloud-2 {
+    display: block;
+    top: 200px;
+    right: 0;
+    z-index: 1;
+
+    fill: lightskyblue;
+    animation-name: animateCloud;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+
+  @keyframes animateCloud {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-20vw);
+    }
+  }
+
+  .train {
     display: block;
     bottom: 50%;
     right: 50%;
@@ -253,12 +267,8 @@
       transform: scale(3);
     }
   }
-}
 
-.bicycle {
-  display: none;
-
-  @media screen and (min-width: 768px) {
+  .bicycle {
     display: block;
     bottom: 50%;
     right: 0;
@@ -280,12 +290,8 @@
       transform: translateX(100vw);
     }
   }
-}
 
-.bus {
-  display: none;
-
-  @media screen and (min-width: 768px) {
+  .bus {
     display: block;
     bottom: 25%;
     right: 5%;
@@ -311,12 +317,8 @@
       transform: scale(1) translateY(-2px) rotateX(-2deg);
     }
   }
-}
 
-.car {
-  display: none;
-
-  @media screen and (min-width: 768px) {
+  .car {
     display: block;
     bottom: 20%;
     right: 20%;
@@ -341,12 +343,8 @@
       transform: perspective(400px) translateY(-3px);
     }
   }
-}
 
-.truck {
-  display: none;
-
-  @media screen and (min-width: 768px) {
+  .truck {
     display: block;
     bottom: 0;
     left: 0;
@@ -369,9 +367,9 @@
   }
 }
 
-.paw {
+/* .paw {
   position: absolute;
-  display: block;
+  display: none;
 }
 
 .paw-left {
@@ -478,4 +476,4 @@
     transform: translate(100vw, -100vh);
     opacity: 0;
   }
-}
+} */
