@@ -218,7 +218,7 @@
     }
 
     100% {
-      transform: translateX(300px);
+      transform: translateX(30vw);
     }
   }
 
@@ -240,7 +240,7 @@
     }
 
     100% {
-      transform: translateX(-20vw);
+      transform: translateX(-15vw);
     }
   }
 
@@ -321,7 +321,7 @@
   .car {
     display: block;
     bottom: 20%;
-    right: 20%;
+    right: 35%;
     fill: rgb(252, 225, 18);
 
     animation-name: animateCar;
@@ -357,6 +357,11 @@
   @keyframes animateTruck {
     0% {
       transform: translateX(0);
+      opacity: 1;
+    }
+
+    50% {
+      transform: translateX(50vw);
       opacity: 1;
     }
 
