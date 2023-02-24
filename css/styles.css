@@ -2,11 +2,8 @@
   position: relative;
   margin: 0 auto;
 
-  
   width: 1200px;
   height: 800px;
-  
-  /* border: 1px solid #000000; */
 }
 
 @media screen and (max-width: 479px) {
@@ -17,22 +14,26 @@
 }
 
 @media screen and (min-width: 480px) {
-  .section {width: 480px;}
+  .section {
+    width: 480px;
+  }
 }
 
-@media screen and (min-width: 768px){
-  .section {width: 768px;}
+@media screen and (min-width: 768px) {
+  .section {
+    width: 768px;
+  }
 }
 
-@media screen and (min-width: 1200px){
-  .section {width: 1200px;}
+@media screen and (min-width: 1200px) {
+  .section {
+    width: 1200px;
+  }
 }
-
 
 .icon {
-  display: block;
   position: absolute;
-  }
+}
 
 .is-animated {
   animation-duration: 3s;
@@ -41,64 +42,75 @@
 }
 
 .sun {
-  top: 5%;
-  right: 25%;
-  display: block;
-  fill: rgb(247, 247, 126);
-  animation-name: animateSun;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
+  display: none;
 
-@keyframes animateSun {
-  0% {
-    transform: rotateZ(0);
+  @media screen and (min-width: 768px) {
+    display: block;
+    top: 5%;
+    right: 25%;
+    fill: rgb(247, 247, 126);
+    animation-name: animateSun;
+    animation-timing-function: linear;
+    animation-direction: alternate;
   }
 
-  100% {
-    transform: rotateZ(360deg);
+  @keyframes animateSun {
+    0% {
+      transform: rotateZ(0);
+    }
+
+    100% {
+      transform: rotateZ(360deg);
+    }
   }
 }
 
 .cloud {
-  display: block;
-  top: 0px;
-  left: 0px;
-  fill: lightskyblue;
-  animation-name: animateCloudLeft;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
+  display: none;
 
-@keyframes animateCloudLeft {
-  0% {
-    transform: translateX(0);
+  @media screen and (min-width: 768px) {
+    display: block;
+    top: 0px;
+    left: 0px;
+    fill: lightskyblue;
+    animation-name: animateCloudLeft;
+    animation-timing-function: linear;
+    animation-direction: alternate;
   }
 
-  100% {
-    transform: translateX(600px);
+  @keyframes animateCloudLeft {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(600px);
+    }
   }
 }
 
 .cloud-2 {
-  display: block;
-  top: 200px;
-  right: 0;
-  z-index: 1;
+  display: none;
 
-  fill: lightskyblue;
-  animation-name: animateCloud;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
+  @media screen and (min-width: 768px) {
+    display: block;
+    top: 200px;
+    right: 0;
+    z-index: 1;
 
-@keyframes animateCloud {
-  0% {
-    transform: translateX(0);
+    fill: lightskyblue;
+    animation-name: animateCloud;
+    animation-timing-function: linear;
+    animation-direction: alternate;
   }
+  @keyframes animateCloud {
+    0% {
+      transform: translateX(0);
+    }
 
-  100% {
-    transform: translateX(-20vw);
+    100% {
+      transform: translateX(-20vw);
+    }
   }
 }
 
@@ -216,125 +228,144 @@
 }
 
 .train {
-  display: block;
-  bottom: 50%;
-  right: 50%;
+  display: none;
 
-  transform: translate(-50%, -50%);
+  @media screen and (min-width: 768px) {
+    display: block;
+    bottom: 50%;
+    right: 50%;
 
-  fill: aquamarine;
+    transform: translate(-50%, -50%);
 
-  animation-name: animateTrain;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
+    fill: aquamarine;
 
-@keyframes animateTrain {
-  0% {
-    transform: scale(0);
+    animation-name: animateTrain;
+    animation-timing-function: linear;
+    animation-direction: alternate;
   }
 
-  100% {
-    transform: scale(3);
+  @keyframes animateTrain {
+    0% {
+      transform: scale(0);
+    }
+
+    100% {
+      transform: scale(3);
+    }
   }
 }
 
 .bicycle {
-  display: block;
-  bottom: 50%;
-  right: 0;
-  fill: darkgreen;
+  display: none;
 
-  animation-name: animateBicycle;
-  animation-duration: 8s;
-}
+  @media screen and (min-width: 768px) {
+    display: block;
+    bottom: 50%;
+    right: 0;
+    fill: darkgreen;
 
-@keyframes animateBicycle {
-  0% {
-    transform: translateX(100vw);
+    animation-name: animateBicycle;
+    animation-duration: 8s;
   }
+  @keyframes animateBicycle {
+    0% {
+      transform: translateX(100vw);
+    }
 
-  50% {
-    transform: translateX(-20vw);
-  }
+    50% {
+      transform: translateX(-20vw);
+    }
 
-  100% {
-    transform: translateX(100vw);
+    100% {
+      transform: translateX(100vw);
+    }
   }
 }
 
 .bus {
-  display: block;
-  bottom: 25%;
-  right: 5%;
-  fill: rgb(255, 146, 51);
-  color: tomato;
-  font-size: 20px;
+  display: none;
 
-  animation-name: animateBus;
-  animation-duration: 1.5s;
-  animation-direction: alternate;
-}
+  @media screen and (min-width: 768px) {
+    display: block;
+    bottom: 25%;
+    right: 5%;
+    fill: rgb(255, 146, 51);
+    color: tomato;
+    font-size: 20px;
 
-@keyframes animateBus {
-  0% {
-    transform: scale(1) translateY(2px) rotateX(2deg) ;
+    animation-name: animateBus;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
   }
 
-  50% {
-    transform: scale(0.9) translateY(0) rotateX(0deg);
-  }
+  @keyframes animateBus {
+    0% {
+      transform: scale(1) translateY(2px) rotateX(2deg);
+    }
 
-  100% {
-    transform: scale(1) translateY(-2px) rotateX(-2deg);
+    50% {
+      transform: scale(0.9) translateY(0) rotateX(0deg);
+    }
+
+    100% {
+      transform: scale(1) translateY(-2px) rotateX(-2deg);
+    }
   }
 }
 
 .car {
-  display: block;
-  bottom: 20%;
-  right: 20%;
-  fill: rgb(252, 225, 18);
+  display: none;
 
-  animation-name: animateCar;
-  animation-duration: 500ms;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
+  @media screen and (min-width: 768px) {
+    display: block;
+    bottom: 20%;
+    right: 20%;
+    fill: rgb(252, 225, 18);
 
-@keyframes animateCar {
-  0% {
-    transform: perspective(400px) translateY(3px);
+    animation-name: animateCar;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-direction: alternate;
   }
 
-  50% {
-    transform: perspective(400px) translateY(0);
-  }
+  @keyframes animateCar {
+    0% {
+      transform: perspective(400px) translateY(3px);
+    }
 
-  100% {
-    transform: perspective(400px) translateY(-3px);
+    50% {
+      transform: perspective(400px) translateY(0);
+    }
+
+    100% {
+      transform: perspective(400px) translateY(-3px);
+    }
   }
 }
 
 .truck {
-  display: block;
-  bottom: 0;
-  left: 0;
-  fill: rgb(86, 86, 251);
+  display: none;
 
-  animation-name: animateTruck;
-  animation-duration: 5s;
-}
+  @media screen and (min-width: 768px) {
+    display: block;
+    bottom: 0;
+    left: 0;
+    fill: rgb(86, 86, 251);
 
-@keyframes animateTruck {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
+    animation-name: animateTruck;
+    animation-duration: 5s;
   }
 
-  100% {
-    transform: translateX(100vw);
-    opacity: 0;
+  @keyframes animateTruck {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
   }
 }
 
@@ -344,6 +375,7 @@
 }
 
 .paw-left {
+  display: none;
   bottom: 0%;
   right: 57%;
 
@@ -384,12 +416,12 @@
 }
 
 .paw-right {
+  display: none;
   bottom: 0;
   right: 50%;
 
   animation-name: animatePawRight;
   animation-duration: 2.5s;
-  
 }
 
 @keyframes animatePawRight {
@@ -425,7 +457,7 @@
 }
 
 .rocket {
-  display: block;
+  display: none;
   bottom: 0;
   left: 0;
   fill: rgb(191, 64, 25);
